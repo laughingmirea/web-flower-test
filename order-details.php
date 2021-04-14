@@ -134,7 +134,7 @@ while($row=mysqli_fetch_array($query))
 					<td class="cart-product-sub-total"><?php echo $row['odate']; ?>  </td>
 					
 					<td>
- <a href="javascript:void(0);" onClick="popUpWindow('http://localhost/Web-flowers/track-order.php?oid=<?php echo htmlentities($row['orderid']);?>');" title="Track order">
+ <a href="javascript:void(0);" onClick="popUpWindow('track-order.php?oid=<?php echo htmlentities($row['orderid']);?>');" title="Track order">
 					Track</td>
 				</tr>
 <?php $cnt=$cnt+1;} } else { ?>
